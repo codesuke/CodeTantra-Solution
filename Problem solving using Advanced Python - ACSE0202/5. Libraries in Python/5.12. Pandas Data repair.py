@@ -10,7 +10,8 @@ df = pd.DataFrame({'A': [1, 5, np.nan, 9],
                    'D': [4, 8, np.nan, 16]})
 
 # Replace missing values with column means but this in not used in the solution
-df_filled = df.fillna(df.mean())
+df['A'].fillna(df['A'].mean(),inplace = True)
+df = df.round(1)
 
 # Display the updated DataFrame
 print(df)

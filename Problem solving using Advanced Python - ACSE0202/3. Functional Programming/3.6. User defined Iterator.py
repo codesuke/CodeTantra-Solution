@@ -1,14 +1,10 @@
 # Get user input for the list of elements
-elements = input("Enter a list of elements: ").split()
+existing_list = input("Enter a list of elements: ")
+existing_list = existing_list.split(" ")
 
 # Create new list with first letters
-new_list = []
-for word in elements:
-    if word:  # Check if word is not empty
-        # Get first alphabetical character if first char is not a letter
-        first_char = next((c for c in word if c.isalpha()), '')
-        if first_char:
-            new_list.append(first_char.lower())
+new_list = map(lambda x: x[0], existing_list)
+new_list = list(new_list)
 
 # Print the result
 print(new_list)
