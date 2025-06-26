@@ -12,7 +12,7 @@ class Car:
     # Instance method
     def start(self):
         # Complete this instance method
-        print(f"The {self.year} {self.make} {self.model} is starting up...")
+        print(f"The {self.year} {self.make} is starting up...")
 
 # Get user input
 make = input("Enter make: ")

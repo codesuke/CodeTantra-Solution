@@ -15,7 +15,7 @@ class Circle:
         return 2 * Circle.PI * self.radius
 
 # Get radius from user input and convert it to an integer
-radius = int(input("Enter radius: "))
+radius = int(input("Enter radius:"))
 
 # Create an instance of the Circle class
 c1 = Circle(radius)
